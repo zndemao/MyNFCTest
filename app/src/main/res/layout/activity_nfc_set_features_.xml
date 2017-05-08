@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mao.de.zn.mynfctest.activity.SetFeaturesActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卡号" />
+
+    <Button
+        android:id="@+id/play_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放音乐" />
+
+    <Button
+        android:id="@+id/call_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拨打电话" />
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送短信" />
+
+    <Button
+        android:id="@+id/open_Website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开网页" />
+
+    <Button
+        android:id="@+id/daitianjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="待添加" />
+</LinearLayout>
