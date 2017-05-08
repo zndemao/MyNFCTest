@@ -16,7 +16,7 @@ import mao.de.zn.mynfctest.nfcinfo.NfcInfo;
 
 public class SetFeaturesActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "SetFeaturesActivity";
-    public  NfcInfo nfc_info;
+    public NfcInfo nfc_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class SetFeaturesActivity extends AppCompatActivity implements View.OnCli
                 queren(3);
                 break;
             case R.id.open_Website:
-                queren("播放音乐", 4);
+                queren(4);
                 break;
             case R.id.daitianjia:
                 break;
@@ -74,14 +74,14 @@ public class SetFeaturesActivity extends AppCompatActivity implements View.OnCli
 
     public void queren(final int hao) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("确定");
+        builder.setTitle("选择发送人");
         final EditText editText = new EditText(this);
         builder.setView(editText);
         builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 //                NfcInfo nfc_info = SetFeaturesActivity.this.nfc_info;
-                new SetFunction().setCardFunction(nfc_info,hao, editText.getText().toString().trim());
+                new SetFunction().setCardFunction(nfc_info, hao, editText.getText().toString().trim());
             }
         });
         builder.setNegativeButton("取消", null);
